@@ -5,3 +5,4 @@ Behind the scenes it uses a Polymer `platinum-push-messaging` element that regis
 push notifications, and a `node` server that collects all the registered clients
 and sends them messages.
 
+Heavily inspired by [caturdayPost](https://caturday-post.herokuapp.com/)
