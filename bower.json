@@ -1,0 +1,21 @@
+{
+  "name": "leeds-js-post",
+  "private": true,
+  "license": "MIT",
+  "authors": [
+    "Thiru<thiru.androider@gmail.com>"
+  ],
+  "description": "Sends out push notifications to leeds-js using platinum-push-messaging",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "paper-toggle-button": "PolymerElements/paper-toggle-button#^1.0.0",
+    "platinum-push-messaging": "PolymerElements/platinum-push-messaging#master"
+  }
+}
