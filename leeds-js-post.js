@@ -58,31 +58,13 @@ app.get('/notification-data.json', function (req, res) {
 
   // From http://www.adoptacatfoundation.org/cat_haikus.htm.
   // If you want to contribute with a haiku, please send a PR! :)
-  var haikus = [
-      'Is anybody there?\n\nHello?',
-      'The food in my bowl\nIs old, and more to the point\nContains no tuna.',
-      'So you want to play.\nWill I claw at dancing string?\nYour ankle\'s closer.',
-      'There\'s no dignity\nIn being sick: which is why\nI don\'t tell you where.',
-      'Seeking solitude\nI am locked in the closet.\nFor once I need you.',
-      'Tiny can, dumped in plastic bowl\nPresentation, One star;\nService: none.',
-      'Am I in your way?\nYou seem to have it backwards:\nThis pillow\'s taken.',
-      'Your mouth is moving;\nUp and down, emitting noise.\nI\'ve lost interest.',
-      'The dog wags his tail,\nSeeking approval. See mine?\nDifferent message.',
-      'My brain: walnut-sized.\nYours: largest among primates.\nYet, who leaves for work?',
-      'Most problems can be\nIgnored. The more difficult\nOnes can be slept through.',
-      'My affection is conditional.\nDon\'t stand up,\nIt\'s your lap I love.',
-      'Cats can\'t steal the breath\nOf children. But if my tail\'s\nPulled again, I\'ll learn.',
-      'I don\'t mind being\nTeased, any more than you mind\nA skin graft or two.',
-      'So you call this thing\nYour cat carrier. I call\nThese my blades of death.',
-      'Toy mice, dancing yarn\nMeowing sounds.\nI\'m convinced: You\'re an idiot.'
-    ];
 
   request("http://cats.nanobit.org/url", function(error, response, body) {
     var index = Math.floor(Math.random() * haikus.length);
 
     res.json({
       'title': index == 0 ? titles[0] : titles[1],
-      'message': haikus[index],
+      'message': 'Please help yourself with Food & Drink! Main Talk Starts in few minutes',
       'url': body,
       'icon': body,
       'tag': 'cat-push-notification'
