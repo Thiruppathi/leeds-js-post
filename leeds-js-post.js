@@ -58,13 +58,17 @@ app.get('/notification-data.json', function (req, res) {
 
   // From http://www.adoptacatfoundation.org/cat_haikus.htm.
   // If you want to contribute with a haiku, please send a PR! :)
+  var haikus = [
+      'Please Help Yourself with Food & Drinks. \n\nTalk will begin in few minutes.',
+      'Talk will begin in few minutes.\n\nPlease Help Yourself with Food & Drinks.'
+    ];
 
   request("http://cats.nanobit.org/url", function(error, response, body) {
     var index = Math.floor(Math.random() * haikus.length);
 
     res.json({
       'title': index == 0 ? titles[0] : titles[1],
-      'message': 'Please help yourself with Food & Drink! Main Talk Starts in few minutes',
+      'message': haikus[index],
       'url': body,
       'icon': body,
       'tag': 'cat-push-notification'
