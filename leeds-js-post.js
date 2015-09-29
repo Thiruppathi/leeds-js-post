@@ -53,8 +53,8 @@ databasePromise.then(function(db) {
  */
 app.get('/notification-data.json', function (req, res) {
   // Testing data
-  var titles = ['Halp I am a cat trapped in a push notification',
-                'And now, a haiku:'];
+  var titles = ['Leeds JS - Chris Mansion - Ember 2.0',
+                'Leeds JS - Ember 2.0 Featureless Release by Chris'];
 
   // From http://www.adoptacatfoundation.org/cat_haikus.htm.
   // If you want to contribute with a haiku, please send a PR! :)
