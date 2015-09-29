@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/leedsJs.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="images/leedsJs.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/leedsJs.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="images/leedsJs.png" />
 
-    <title>Notify</title>
+  <title>Notify</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,300italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,300italic' rel='stylesheet' type='text/css'>
 </head>
 
 <style>
-#count {
-  font-weight: bold;
-  font-size: 20px;
-}
+  #count {
+    font-weight: bold;
+    font-size: 20px;
+  }
 </style>
+
 <body>
   <div class="container">
+
     <button class='push-button' id="button">🍟🍞🍹🍺</button>
-    <p>There are currently <span id="count" class="in">0</span> registered listeners</p>
-    <br><br>
+    <p>There are currently
+      <span id="count" class="in">0</span> registered listeners</p>
+    <br>
+    <br>
     <h1>Did you register for push notifications?</h1>
     <p>If not, you need to enable push notifications <a href="index.html">here</a></p>
-
+    <div class="leedsLogo">
+      <img src="images/leedsJs.png" alt="Leeds JS" id="logo" />
+    </div>
     <div id="footer">
-        <p>made with <span class="red">❤︎</span> by <a href="https://twitter.com/thiruppathi">Thiru</a>.
+      <p>Made with
+        <span class="red">❤︎</span> by <a href="https://twitter.com/thiruppathi" id="thiru">Thiru</a>.</p>
     </div>
   </div>
 
@@ -56,7 +64,6 @@
       };
       xhr.send();
     });
-
   </script>
 </body>
 
