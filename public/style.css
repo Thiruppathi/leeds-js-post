@@ -108,3 +108,12 @@ a:hover {
     letter-spacing: .2em;
     padding-right: 6px;
 }
+
+.leedsLogo {
+text-align: center;
+}
+
+#logo {
+  width: 200px;
+  height: 200px;
+}
