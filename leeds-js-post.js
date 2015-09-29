@@ -69,8 +69,8 @@ app.get('/notification-data.json', function (req, res) {
     res.json({
       'title': index == 0 ? titles[0] : titles[1],
       'message': haikus[index],
-      'url': body,
-      'icon': body,
+      'url': 'http://www.meetup.com/LeedsJS/events/225103266/',
+      'icon': 'http://photos1.meetupstatic.com/photos/event/7/c/5/9/highres_433591833.jpeg',
       'tag': 'cat-push-notification'
     });
   });
